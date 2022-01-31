@@ -10,14 +10,14 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./addbook.component.css']
 })
 export class AddbookComponent implements OnInit {
-	public book: any;
+	public book : any;
   constructor(private _service: BookstoreService, private _route: BookstoreService) { }
 
   ngOnInit(): void {
-	this.addbook();
+	this.addbookFormSubmite();
   }
-  addbook(){
-	this._service.addbookFormSubmit().subscribe(data=>this.book=data)
+  addbookFormSubmite(){
+	this._service.addbookFormSubmite();
 }
 
 }
