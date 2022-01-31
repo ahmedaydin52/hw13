@@ -17,7 +17,7 @@ export class AddbookComponent implements OnInit {
 	this.addbookFormSubmite();
   }
   addbookFormSubmite(){
-	this._service.addbookFormSubmite();
+	this._service.addbookFormSubmite().subscribe(data=> this.book = data,);
 }
 
 }
